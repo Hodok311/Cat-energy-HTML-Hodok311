@@ -1,0 +1,207 @@
+// Начните писать стили здесь
+.social-link {
+  display: flex;
+  background-color: var(--basic-grey);
+  flex-direction: column;
+  padding: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    padding: 0 30px;
+  }
+
+  .container-wrapper {
+    // width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 321px) {
+      width: 100%;
+    }
+
+    @media (min-width: @tablet-width) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 708px;
+    }
+    @media (min-width: @desktop-width) {
+      width: 1220px;
+    }
+  }
+}
+
+.social-link__logo {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid var(--basic-border-gainsboro);
+
+  @media (min-width: @tablet-width) {
+    border: none;
+    padding-top: 54px;
+    padding-bottom: 62px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 61px;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.social-link__logo--wrapper {
+  height: 24px;
+  width: 280px;
+
+  @media (min-width: @tablet-width) {
+    width: 128px;
+  }
+}
+
+.social-link__list--wrapper{
+  border-bottom: 1px solid var(--basic-border-gainsboro);
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    border-bottom: none;
+  }
+}
+
+
+.social-link__list {
+  display: flex;
+  justify-content: space-between;
+  width: 130px;
+  padding: 24px 0px 17px 0px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    padding: 12px 0 20px 21px;
+    border: none;
+    width: 123px;
+  }
+
+  @media (min-width: @desktop-width) {
+    border: none;
+    padding-top: 16px;
+  }
+}
+
+.social-link__list-item {
+  list-style: none;
+}
+
+.social-link__list-item-vk {
+  width: 23px;
+  height: 16px;
+  fill: var(--basic-spesial-grey);
+
+  @media (min-width: @tablet-width) {
+    width: 34px;
+    height: 22px;
+  }
+}
+
+.social-link__list-item-insta {
+  width: 16px;
+  height: 16px;
+  fill: var(--basic-spesial-grey);
+
+  @media (min-width: @tablet-width) {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+.social-link__list-item-fb {
+  width: 10px;
+  height: 17px;
+  fill: var(--basic-spesial-grey);
+
+  @media (min-width: @tablet-width) {
+    width: 14px;
+    height: 26px;
+  }
+}
+
+.social-link__academy {
+  padding-top: 24px;
+  padding-bottom: 22px;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    padding-top: 9px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 19px;
+    padding-top: 20px;
+  }
+}
+.social-link__academy--wrapper{
+  display: flex;
+  justify-content: space-between;
+  width: 280px;
+  margin: 0 auto;
+  @media (min-width: @tablet-width) {
+    width: 168px;
+  }
+}
+
+.social-link__academy-text {
+  font-family: "Arial", sans-serif;
+  .main-text(16px; 18px);
+  color: var(--basic-dark-grey);
+  padding: 7px 0;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 18px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 13px;
+    /*margin-right: 22px;*/
+  }
+}
+
+.social-link__academy-logo {
+  width: 37px;
+  height: 40px;
+  fill: var(--basic-spesial-grey);
+
+  @media (min-width: @tablet-width) {
+    width: 37px;
+    height: 40px;
+  }
+}
+
+.social-link__list-item:hover .social-link__list-item-vk,
+.social-link__list-item:hover .social-link__list-item-fb,
+.social-link__list-item:hover .social-link__list-item-insta,
+.social-link__academy-image:hover .social-link__academy-logo {
+  fill: var(--basic-green-button);
+}
+
+.social-link__list-item:active .social-link__list-item-vk,
+.social-link__list-item:active .social-link__list-item-fb,
+.social-link__list-item:active .social-link__list-item-insta,
+.social-link__academy-image:active .social-link__academy-logo {
+  fill: var(--basic-green-button);
+  opacity: 0.3;
+}
+
+.social-link__academy-text:active {
+  color: var(--basic-dark-grey);
+  opacity: 0.3;
+}
